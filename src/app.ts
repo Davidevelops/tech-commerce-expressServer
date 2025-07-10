@@ -10,7 +10,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:4000",
-  "https://tech-commerce-lqtlzd7r8-davids-projects-235cae0e.vercel.app",
+  "https://tech-commerce-eta.vercel.app",
 ];
 
 app.use(express.json());
