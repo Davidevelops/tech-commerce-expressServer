@@ -10,10 +10,14 @@ const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const shopRoutes_1 = __importDefault(require("./router/shopRoutes"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
+const allowedOrigins = [
+    "http://localhost:4000",
+    "https://tech-commerce-lqtlzd7r8-davids-projects-235cae0e.vercel.app",
+];
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use((0, cors_1.default)({
-    origin: ["http://localhost:4000", "https://tech-commerce-red.vercel.app/"],
+    origin: allowedOrigins,
     credentials: true,
 }));
 app.use((0, cookie_parser_1.default)());
