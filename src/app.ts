@@ -12,6 +12,7 @@ const allowedOrigins = [
   "http://localhost:4000",
   "http://localhost:3000",
   "https://tech-commerce-eta.vercel.app",
+  "https://tech-commerce-admin-5x9e.vercel.app",
 ];
 
 app.use(express.json());
